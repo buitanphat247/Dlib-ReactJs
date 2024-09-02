@@ -7,16 +7,16 @@ const HomePage = () => {
       <nav className="bg-blue-600 text-white font-bold flex p-4">
         <div className="w-1/2 flex px-10 mx-5 justify-start">
           <ul className="flex md:flex-row flex-col md:gap-[4vw] gap-8">
-            <li><a href="#">Trang Chủ</a></li>
-            <li><a href="#">Tin Tức</a></li>
-            <li><a href="#">Hướng Dẫn</a></li>
-            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="/">Trang Chủ</a></li>
+            <li><a href="/news-page">Tin Tức</a></li>
+            <li><a href="/tutorial-page">Hướng Dẫn</a></li>
+            <li><a href="/about-page">Giới Thiệu</a></li>
           </ul>
         </div>
         <div className="w-1/2 flex px-10 mx-5 justify-end">
           <ul className="flex md:flex-row flex-col md:gap-[4vw] gap-8">
-            <li><a href="#">Đăng Kí</a></li>
-            <li><a href="#">Đăng Nhập</a></li>
+            <li><a href="/sign-up">Đăng Kí</a></li>
+            <li><a href="/login">Đăng Nhập</a></li>
           </ul>
         </div>
       </nav>
@@ -26,13 +26,13 @@ const HomePage = () => {
           <div className="w-1/2 p-6 text-white">
             <h2 className="text-2xl font-bold mb-2">THPT Vũng Tàu</h2>
             <p className="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-            <div className="space-x-2 flex flex-row items-center justify-center gap-8 font-bold">
-              <button className="bg-[#e5e7eb] text-blue-500 w-1/2 py-2 rounded">Đăng Nhập</button>
-              <button className="bg-[#e5e7eb] text-blue-500 w-1/2 py-2 rounded">Đăng Kí</button>
+            <div className="space-x-2 flex flex-row items-center justify-center gap-8 font-bold text-blue-500">
+              <a href="/login" className="w-1/2 bg-[#e5e7eb] py-2 rounded text-center">Đăng Nhập</a>
+              <a href="/sign-up" className="w-1/2 bg-[#e5e7eb] py-2 rounded text-center">Đăng Kí</a>
             </div>
           </div>
           <div className="w-1/2">
-            <img src="" alt="Placeholder" className="w-full h-full object-cover" />
+            <img src="https://st.quantrimang.com/photos/image/2021/02/04/Hinh-nen-Quoc-Ky-VN-9.jpg" alt="Placeholder" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -51,7 +51,7 @@ const HomePage = () => {
           ].map((item, index) => (
             <div key={index} className="flex items-start space-x-2">
               <div className="w-1/6">
-                <img src="" alt="Placeholder" />
+                <img src="https://st.quantrimang.com/photos/image/2021/02/04/Hinh-nen-Quoc-Ky-VN-9.jpg" alt="Placeholder" />
                 <h4 className="font-semibold text-blue-500">{item.title}</h4>
               </div>
               <div className="w-3/4">
@@ -68,7 +68,7 @@ const HomePage = () => {
         <div className="flex flex-col items-center p-4 space-y-4 md:flex-row md:space-y-0 md:space-x-4">
           <div className="w-full md:w-2/3 border border-blue-500 rounded-md">
             <img
-              src=""
+              src="https://st.quantrimang.com/photos/image/2021/02/04/Hinh-nen-Quoc-Ky-VN-9.jpg"
               alt="Placeholder"
               className="w-full h-auto"
               width="800"
@@ -80,12 +80,9 @@ const HomePage = () => {
             {[1, 2, 3].map((item) => (
               <div key={item} className="bg-gray-200 flex items-center p-4 border rounded-md border-blue-500">
                 <img
-                  src=""
+                  src="https://st.quantrimang.com/photos/image/2021/02/04/Hinh-nen-Quoc-Ky-VN-9.jpg"
                   alt="Placeholder"
-                  className="w-12 h-12 mr-4"
-                  width="50"
-                  height="50"
-                  style={{ aspectRatio: "50/50", objectFit: "cover" }}
+                  className="w-1/3 h-20 mr-4"
                 />
                 <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus maximus leo pharetra a ut mauris.</p>
               </div>
@@ -104,7 +101,7 @@ const HomePage = () => {
             { title: 'Lượt Xem', value: 30 },
           ].map((item, index) => (
             <div key={index} className="text-center">
-              <img src="" alt="Placeholder" className="" />
+              <img src="https://st.quantrimang.com/photos/image/2021/02/04/Hinh-nen-Quoc-Ky-VN-9.jpg" alt="Placeholder" className="p-4" />
               <div className="text-3xl font-bold text-blue-500">{item.value}</div>
               <div className="text-sm text-gray-600">{item.title}</div>
             </div>

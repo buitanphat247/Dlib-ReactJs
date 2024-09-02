@@ -7,16 +7,16 @@ const NewsPage = () => {
       <nav className="bg-blue-600 text-white font-bold flex p-4">
         <div className="w-1/2 flex px-10 mx-5 justify-start">
           <ul className="flex md:flex-row flex-col md:gap-[4vw] gap-8">
-            <li><a href="#">Trang Chủ</a></li>
-            <li><a href="#">Tin Tức</a></li>
-            <li><a href="#">Hướng Dẫn</a></li>
-            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="/">Trang Chủ</a></li>
+            <li><a href="/news-page">Tin Tức</a></li>
+            <li><a href="/tutorial-page">Hướng Dẫn</a></li>
+            <li><a href="/about-page">Giới Thiệu</a></li>
           </ul>
         </div>
         <div className="w-1/2 flex px-10 mx-5 justify-end">
           <ul className="flex md:flex-row flex-col md:gap-[4vw] gap-8">
-            <li><a href="#">Đăng Kí</a></li>
-            <li><a href="#">Đăng Nhập</a></li>
+            <li><a href="/sign-up">Đăng Kí</a></li>
+            <li><a href="/login">Đăng Nhập</a></li>
           </ul>
         </div>
       </nav>
@@ -30,7 +30,7 @@ const NewsPage = () => {
           <div className="flex flex-col items-center p-4 space-y-4 md:flex-row md:space-y-0 md:space-x-4">
             <div className="w-full md:w-7/12 border border-blue-500 rounded-md">
               <img
-                src=""
+                src="https://st.quantrimang.com/photos/image/2021/02/04/Hinh-nen-Quoc-Ky-VN-9.jpg"
                 alt="Placeholder"
                 className="w-full h-auto"
                 width="800"
@@ -42,13 +42,10 @@ const NewsPage = () => {
             {[1, 2, 3].map((item) => (
             <div className="bg-gray-200 flex items-center p-4 border rounded-md border-blue-500">
               <img
-                src=""
-                alt="Placeholder"
-                className="w-12 h-12 mr-4"
-                width="50"
-                height="50"
-                style={{ aspectRatio: "50/50", objectFit: "cover" }}
-              />
+                  src="https://st.quantrimang.com/photos/image/2021/02/04/Hinh-nen-Quoc-Ky-VN-9.jpg"
+                  alt="Placeholder"
+                  className="w-1/3 h-20 mr-4"
+                />
               <p className="text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus arcu maximus leo pellentesque
                 pharetra a ut mauris. Sed eget eleifend sem, vel venenatis tortor.
@@ -64,7 +61,7 @@ const NewsPage = () => {
             <div key={index} className="border border-blue-500 p-4 rounded-md shadow-md">
               <div className="flex items-center justify-center mb-2">
                 <div className="flex items-center justify-center">
-                  <img src="" alt="Placeholder" />
+                  <img src="https://st.quantrimang.com/photos/image/2021/02/04/Hinh-nen-Quoc-Ky-VN-9.jpg" alt="Placeholder" />
                 </div>
               </div>
               <p className="text-sm text-gray-500">

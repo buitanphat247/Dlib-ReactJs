@@ -73,10 +73,10 @@ export default function SignUpForm() {
           </div>
 
           <div className="flex items-center justify-center space-x-4 mt-4">
-            <button className="bg-white border border-gray-300 p-2 rounded-full hover:bg-gray-50"></button>
-            <button className="bg-white border border-gray-300 p-2 rounded-full hover:bg-gray-50"></button>
-            <button className="bg-white border border-gray-300 p-2 rounded-full hover:bg-gray-50"></button>
-            <button className="bg-white border border-gray-300 p-2 rounded-full hover:bg-gray-50"></button>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-twitter"></i>
           </div>
         </form>
       </div>

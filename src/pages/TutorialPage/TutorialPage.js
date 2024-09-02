@@ -12,16 +12,16 @@ const TutorialPage = () => {
       <nav className="bg-blue-600 text-white font-bold flex p-4">
         <div className="w-1/2 flex px-10 mx-5 justify-start">
           <ul className="flex md:flex-row flex-col md:gap-[4vw] gap-8">
-            <li><a href="#">Trang Chủ</a></li>
-            <li><a href="#">Tin Tức</a></li>
-            <li><a href="#">Hướng Dẫn</a></li>
-            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="/">Trang Chủ</a></li>
+            <li><a href="/news-page">Tin Tức</a></li>
+            <li><a href="/tutorial-page">Hướng Dẫn</a></li>
+            <li><a href="/about-page">Giới Thiệu</a></li>
           </ul>
         </div>
         <div className="w-1/2 flex px-10 mx-5 justify-end">
           <ul className="flex md:flex-row flex-col md:gap-[4vw] gap-8">
-            <li><a href="#">Đăng Kí</a></li>
-            <li><a href="#">Đăng Nhập</a></li>
+            <li><a href="/sign-up">Đăng Kí</a></li>
+            <li><a href="/login">Đăng Nhập</a></li>
           </ul>
         </div>
       </nav>
@@ -34,9 +34,9 @@ const TutorialPage = () => {
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-20">
         {cards.map((card, index) => (
-          <div key={index} className="bg-gray-200 border border-blue-500 rounded-lg shadow flex items-start grid grid-cols-5 gap-4">
-            <img className="mr-4 col-span-1" alt="Placeholder" />
-            <div className="flex-1 col-span-4 border border-l-blue-500 p-4">
+          <div key={index} className="bg-gray-200 border border-blue-500 rounded-lg shadow flex items-start">
+            <img src="https://st.quantrimang.com/photos/image/2021/02/04/Hinh-nen-Quoc-Ky-VN-9.jpg" alt="Placeholder" className="p-4 w-1/3"/>
+            <div className="flex-1 col-span-4 p-4">
               <p className="text-gray-700 mb-4">{card.description}</p>
               <button className="bg-blue-500 text-white rounded px-4 py-2 w-1/3">
                 {card.buttonText}
